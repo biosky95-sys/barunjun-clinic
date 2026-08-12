@@ -4,10 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>바른준한의원 | 수진역 한의원</title>
+  <title>바른준한의원 | 수진역 2번 출구 | 성남 한의원</title>
 
   <meta name="description"
-        content="성남 수진역 바른준한의원. 몸의 상태를 세심하게 살피고 편안한 진료를 지향합니다.">
+        content="성남 수진역 2번 출구 바른준한의원. 조형준 원장 진료. 경기도 성남시 중원구 광명로 119 금성빌딩 2층. 전화 031-722-2161.">
+
+  <meta name="keywords"
+        content="바른준한의원, 수진역 한의원, 성남 한의원, 성남동 한의원, 수진역 교통사고 한의원, 조형준 한의사">
+
+  <meta property="og:title" content="바른준한의원 | 수진역 2번 출구">
+  <meta property="og:description" content="정성을 담은 맞춤 한방진료, 바른준한의원">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "바른준한의원",
+    "telephone": "031-722-2161",
+    "url": "https://biosky95-sys.github.io/barunjun-clinic/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "광명로 119 금성빌딩 2층",
+      "addressLocality": "성남시 중원구",
+      "addressRegion": "경기도",
+      "addressCountry": "KR"
+    }
+  }
+  </script>
 
   <style>
     * {
@@ -21,413 +45,610 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont,
-                   "Pretendard", "Noto Sans KR", Arial, sans-serif;
-      color: #25342e;
-      background: #ffffff;
+      font-family:
+        "Pretendard",
+        "Noto Sans KR",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      color: #23332b;
       line-height: 1.7;
+      word-break: keep-all;
+      background: #fff;
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
 
     .container {
-      width: min(1120px, 90%);
-      margin: 0 auto;
+      width: min(1160px, 90%);
+      margin: auto;
     }
 
-    /* HEADER */
+    /* 상단 메뉴 */
+
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.95);
-      border-bottom: 1px solid #edf1ee;
-      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid #edf0ed;
     }
 
     .nav {
-      height: 76px;
+      height: 78px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
-      font-size: 23px;
-      font-weight: 800;
-      color: #245c48;
-      letter-spacing: -1px;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      color: #204e3a;
+      line-height: 1.1;
     }
 
-    .logo span {
-      font-size: 12px;
-      font-weight: 500;
-      color: #849089;
+    .logo small {
       display: block;
+      font-size: 10px;
       letter-spacing: 1.5px;
+      color: #8b958f;
+      margin-top: 6px;
+      font-weight: 600;
     }
 
     nav ul {
       display: flex;
-      gap: 32px;
       list-style: none;
-      font-size: 15px;
-      font-weight: 600;
+      gap: 32px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
     }
 
     nav a:hover {
-      color: #3c8067;
+      color: #3e8061;
     }
 
-    /* HERO */
+    .nav-phone {
+      background: #285e45;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 999px;
+    }
+
+    /* 첫 화면 */
+
     .hero {
-      min-height: 650px;
+      background:
+        radial-gradient(circle at 80% 20%, #dceade, transparent 30%),
+        linear-gradient(135deg, #fbfaf4 0%, #f0f6f1 55%, #e8f2eb 100%);
+      min-height: 690px;
       display: flex;
       align-items: center;
-      background:
-        radial-gradient(circle at 80% 30%, #dcece5 0, transparent 30%),
-        linear-gradient(135deg, #f8fbf9 0%, #eef6f2 100%);
     }
 
-    .hero-content {
-      padding: 100px 0;
-      max-width: 700px;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 65px;
+      align-items: center;
+      padding: 95px 0;
     }
 
-    .hero-small {
-      color: #4f806d;
-      font-weight: 700;
-      margin-bottom: 18px;
-      letter-spacing: 1px;
+    .hero-eyebrow {
+      font-size: 14px;
+      color: #507a63;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      margin-bottom: 20px;
     }
 
     .hero h1 {
-      font-size: clamp(40px, 6vw, 68px);
-      line-height: 1.18;
+      font-size: clamp(42px, 5vw, 66px);
+      line-height: 1.2;
+      color: #183d2c;
       letter-spacing: -3px;
       margin-bottom: 26px;
-      color: #183b2e;
     }
 
     .hero h1 strong {
-      color: #43806a;
+      color: #477a5f;
     }
 
-    .hero-text {
-      font-size: 19px;
-      color: #66736d;
-      max-width: 570px;
-      margin-bottom: 40px;
+    .hero-description {
+      color: #68766e;
+      font-size: 18px;
+      max-width: 620px;
+      margin-bottom: 38px;
     }
 
-    .buttons {
+    .hero-buttons {
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
     }
 
-    .btn {
-      display: inline-block;
-      padding: 15px 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      transition: 0.2s;
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 25px;
+      border-radius: 9px;
+      font-weight: 800;
+      transition: .2s;
+      font-size: 15px;
     }
 
-    .btn-main {
-      background: #306a55;
+    .button-primary {
+      background: #285e45;
       color: white;
     }
 
-    .btn-main:hover {
-      background: #245541;
+    .button-primary:hover {
+      background: #194b35;
+      transform: translateY(-2px);
     }
 
-    .btn-sub {
+    .button-secondary {
+      border: 1px solid #c9d5cc;
+      background: rgba(255,255,255,.8);
+      color: #2c5743;
+    }
+
+    .button-secondary:hover {
       background: white;
-      border: 1px solid #cddbd5;
-      color: #315949;
     }
 
-    /* COMMON */
+    /* 첫 화면 오른쪽 정보카드 */
+
+    .hero-card {
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(255,255,255,.9);
+      border-radius: 25px;
+      padding: 38px;
+      box-shadow: 0 25px 70px rgba(32,76,55,.12);
+    }
+
+    .hero-card-title {
+      color: #285b43;
+      font-size: 22px;
+      font-weight: 900;
+      margin-bottom: 25px;
+    }
+
+    .quick-row {
+      padding: 17px 0;
+      border-bottom: 1px solid #e9eeea;
+    }
+
+    .quick-row:last-child {
+      border-bottom: 0;
+    }
+
+    .quick-label {
+      color: #89948e;
+      font-size: 13px;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .quick-value {
+      color: #244d39;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .quick-value.phone {
+      font-size: 27px;
+    }
+
+    /* 공통 섹션 */
+
     section {
-      padding: 100px 0;
+      padding: 105px 0;
     }
 
     .section-label {
-      color: #52806e;
+      color: #608773;
       font-size: 13px;
-      font-weight: 800;
       letter-spacing: 2px;
-      margin-bottom: 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
     }
 
     .section-title {
-      font-size: 36px;
-      letter-spacing: -1.5px;
+      font-size: 38px;
+      letter-spacing: -1.8px;
+      line-height: 1.35;
+      color: #213f31;
       margin-bottom: 18px;
-      color: #203d32;
     }
 
-    .section-desc {
-      color: #75817c;
+    .section-description {
+      color: #748078;
       font-size: 17px;
-      max-width: 650px;
+      max-width: 680px;
     }
 
-    /* INTRO */
-    .intro {
-      background: white;
-    }
+    /* 소개 */
 
-    .intro-grid {
+    .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 70px;
+      gap: 75px;
       align-items: center;
     }
 
-    .intro-card {
-      background: #f2f7f4;
+    .message-card {
       min-height: 360px;
-      border-radius: 22px;
-      padding: 50px;
+      padding: 52px;
+      border-radius: 25px;
+      background:
+        linear-gradient(135deg, #eef5ee, #faf8ed);
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      align-items: center;
     }
 
-    .intro-card .big {
-      font-size: 28px;
-      line-height: 1.5;
+    .message-card p {
+      font-family: Georgia, "Noto Serif KR", serif;
+      font-size: 29px;
+      line-height: 1.65;
       font-weight: 700;
-      color: #315849;
+      color: #315641;
     }
 
-    /* TREATMENT */
+    /* 진료 */
+
     .treatment {
-      background: #f7faf8;
+      background: #f6f8f6;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+    .treatment-grid {
       margin-top: 50px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 16px;
-      padding: 34px;
-      min-height: 210px;
-      border: 1px solid #edf1ef;
-      transition: 0.25s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(35,70,55,0.08);
-    }
-
-    .number {
-      font-size: 13px;
-      font-weight: 800;
-      color: #79a28f;
-      margin-bottom: 20px;
-    }
-
-    .card h3 {
-      font-size: 21px;
-      margin-bottom: 11px;
-      color: #2a493d;
-    }
-
-    .card p {
-      font-size: 15px;
-      color: #77817d;
-    }
-
-    /* DOCTOR */
-    .doctor-grid {
       display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 70px;
-      align-items: center;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
     }
 
-    .doctor-photo {
-      background: #e8f0ec;
-      border-radius: 20px;
-      min-height: 460px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #789187;
-      text-align: center;
-      padding: 30px;
+    .treatment-card {
+      background: white;
+      border: 1px solid #e9eeea;
+      padding: 34px;
+      min-height: 215px;
+      border-radius: 18px;
+      transition: .25s;
     }
 
-    .doctor-text h3 {
-      font-size: 30px;
-      margin: 16px 0 24px;
+    .treatment-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(42,79,59,.08);
     }
 
-    .doctor-text p {
-      color: #6f7b76;
+    .treatment-number {
+      color: #7ea28e;
+      font-weight: 900;
+      font-size: 13px;
       margin-bottom: 17px;
     }
 
-    /* INFO */
-    .info {
-      background: #284f40;
-      color: white;
-    }
-
-    .info .section-title,
-    .info .section-label {
-      color: white;
-    }
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      margin-top: 50px;
-    }
-
-    .info-box {
-      border-top: 1px solid rgba(255,255,255,0.3);
-      padding-top: 25px;
-    }
-
-    .info-box h3 {
+    .treatment-card h3 {
+      color: #2a4e3b;
       font-size: 21px;
-      margin-bottom: 20px;
-    }
-
-    .info-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 9px 0;
-      color: #e7f0ec;
-      border-bottom: 1px solid rgba(255,255,255,0.09);
-    }
-
-    .address {
-      font-size: 18px;
-      line-height: 1.8;
-      color: #e7f0ec;
-    }
-
-    /* FOOTER */
-    footer {
-      background: #18382c;
-      color: #aebcb5;
-      padding: 45px 0;
-      font-size: 13px;
-    }
-
-    .footer-name {
-      color: white;
-      font-size: 18px;
-      font-weight: 800;
       margin-bottom: 12px;
     }
 
-    /* MOBILE */
-    @media (max-width: 800px) {
+    .treatment-card p {
+      color: #77827c;
+      font-size: 15px;
+    }
+
+    /* 원장 */
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .doctor-visual {
+      height: 470px;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 50% 30%, #f7f4e8, transparent 40%),
+        linear-gradient(145deg,#e6eee6,#d8e8dc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .doctor-symbol {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      color: #47765d;
+      font-weight: 900;
+      box-shadow: 0 15px 40px rgba(31,72,51,.09);
+    }
+
+    .doctor-name {
+      font-size: 34px;
+      color: #234a36;
+      margin: 14px 0 25px;
+      font-weight: 900;
+    }
+
+    .doctor-name span {
+      font-size: 18px;
+      font-weight: 600;
+      color: #7b867f;
+      margin-left: 5px;
+    }
+
+    .doctor-copy p {
+      font-size: 17px;
+      color: #707b75;
+      margin-bottom: 16px;
+    }
+
+    /* 예약 CTA */
+
+    .reservation {
+      padding: 85px 0;
+      background: #edf4ee;
+    }
+
+    .reservation-box {
+      border-radius: 26px;
+      padding: 55px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      background: white;
+      box-shadow: 0 12px 45px rgba(40,76,57,.08);
+    }
+
+    .reservation-box h2 {
+      font-size: 31px;
+      color: #244c38;
+      margin-bottom: 9px;
+    }
+
+    .reservation-box p {
+      color: #7b867f;
+    }
+
+    .reservation-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .naver {
+      background: #03c75a;
+      color: white;
+    }
+
+    /* 진료시간 + 지도 */
+
+    .visit {
+      background: #254d39;
+      color: white;
+    }
+
+    .visit .section-label,
+    .visit .section-title {
+      color: white;
+    }
+
+    .visit .section-description {
+      color: #d4e0d8;
+    }
+
+    .visit-grid {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 35px;
+    }
+
+    .visit-card {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      padding: 35px;
+      border-radius: 20px;
+    }
+
+    .visit-card h3 {
+      font-size: 22px;
+      margin-bottom: 22px;
+    }
+
+    .schedule-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid rgba(255,255,255,.13);
+      padding: 12px 0;
+      color: #edf5f0;
+    }
+
+    .schedule-row strong {
+      color: white;
+    }
+
+    .notice {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #c7d7cd;
+    }
+
+    .address-big {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .subway {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 7px;
+      margin-bottom: 22px;
+      background: #fff;
+      color: #29513c;
+      font-weight: 800;
+    }
+
+    iframe {
+      width: 100%;
+      height: 270px;
+      border: 0;
+      border-radius: 14px;
+      margin-top: 20px;
+    }
+
+    /* 하단 */
+
+    footer {
+      background: #183728;
+      color: #aab9b0;
+      padding: 48px 0;
+      font-size: 13px;
+    }
+
+    .footer-logo {
+      font-size: 20px;
+      color: white;
+      font-weight: 900;
+      margin-bottom: 13px;
+    }
+
+    .footer-info {
+      line-height: 1.9;
+    }
+
+    /* 모바일 하단 */
+
+    .mobile-bar {
+      display: none;
+    }
+
+    @media (max-width: 850px) {
 
       nav ul {
         display: none;
       }
 
       .nav {
-        height: 65px;
+        height: 68px;
       }
 
       .hero {
-        min-height: 580px;
+        min-height: auto;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        padding: 75px 0;
+        gap: 38px;
       }
 
       .hero h1 {
         letter-spacing: -2px;
       }
 
-      .hero-text {
-        font-size: 17px;
+      .hero-card {
+        padding: 28px;
       }
 
       section {
         padding: 75px 0;
       }
 
-      .intro-grid,
+      .about-grid,
       .doctor-grid,
-      .info-grid {
+      .visit-grid {
         grid-template-columns: 1fr;
         gap: 35px;
       }
 
-      .cards {
+      .treatment-grid {
         grid-template-columns: 1fr;
       }
 
-      .intro-card {
-        min-height: 280px;
-        padding: 35px;
-      }
-
-      .doctor-photo {
-        min-height: 320px;
-      }
-
       .section-title {
-        font-size: 29px;
+        font-size: 30px;
       }
-    }
 
-    /* MOBILE BOTTOM BUTTON */
-    .mobile-contact {
-      display: none;
-    }
+      .message-card {
+        padding: 35px;
+        min-height: 270px;
+      }
 
-    @media(max-width: 800px) {
-      .mobile-contact {
-        display: flex;
+      .message-card p {
+        font-size: 24px;
+      }
+
+      .doctor-visual {
+        height: 330px;
+      }
+
+      .reservation-box {
+        padding: 38px 28px;
+        display: block;
+      }
+
+      .reservation-buttons {
+        margin-top: 25px;
+      }
+
+      .mobile-bar {
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        background: white;
-        box-shadow: 0 -3px 15px rgba(0,0,0,0.08);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         z-index: 9999;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.1);
       }
 
-      .mobile-contact a {
-        width: 50%;
+      .mobile-bar a {
         text-align: center;
-        padding: 15px 5px;
-        font-weight: 800;
-      }
-
-      .mobile-phone {
-        background: #326a55;
-        color: white;
+        padding: 16px 6px;
+        font-weight: 900;
       }
 
       .mobile-map {
-        color: #315a49;
+        background: white;
+        color: #28543e;
+      }
+
+      .mobile-call {
+        background: #285e45;
+        color: white;
       }
 
       footer {
-        padding-bottom: 90px;
+        padding-bottom: 95px;
       }
     }
-
   </style>
 </head>
 
@@ -436,17 +657,22 @@
 <header>
   <div class="container nav">
 
-    <div class="logo">
+    <a href="#" class="logo">
       바른준한의원
-      <span>BARUNJOON KOREAN MEDICINE CLINIC</span>
-    </div>
+      <small>BARUNJOON KOREAN MEDICINE CLINIC</small>
+    </a>
 
     <nav>
       <ul>
-        <li><a href="#intro">한의원 소개</a></li>
+        <li><a href="#about">한의원 소개</a></li>
         <li><a href="#treatment">진료 안내</a></li>
         <li><a href="#doctor">원장 소개</a></li>
-        <li><a href="#location">오시는 길</a></li>
+        <li><a href="#visit">진료시간 · 오시는 길</a></li>
+        <li>
+          <a class="nav-phone" href="tel:0317222161">
+            031-722-2161
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -454,306 +680,428 @@
 </header>
 
 
-<section class="hero">
+<main>
 
-  <div class="container">
+  <!-- 첫 화면 -->
+  <section class="hero">
 
-    <div class="hero-content">
+    <div class="container hero-grid">
 
-      <div class="hero-small">
-        BARUNJOON KOREAN MEDICINE CLINIC
+      <div>
+
+        <div class="hero-eyebrow">
+          BARUNJOON KOREAN MEDICINE CLINIC
+        </div>
+
+        <h1>
+          몸을 세심하게 살피는<br>
+          <strong>바른 진료</strong>를 생각합니다.
+        </h1>
+
+        <p class="hero-description">
+          바른준한의원은 환자 한 분 한 분의 이야기를 충분히 듣고
+          현재의 몸 상태를 세심하게 살펴,
+          편안하고 정성스러운 진료를 지향합니다.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="tel:0317222161"
+             class="button button-primary">
+            전화 문의
+          </a>
+
+          <a href="#visit"
+             class="button button-secondary">
+            진료시간 · 오시는 길
+          </a>
+
+        </div>
+
       </div>
 
-      <h1>
-        몸을 세심하게 살피는<br>
-        <strong>바른 진료</strong>를 생각합니다.
-      </h1>
 
-      <p class="hero-text">
-        바른준한의원은 환자 한 분 한 분의 이야기를 충분히 듣고,
-        현재의 몸 상태를 살펴 편안하고 세심한 진료를 지향합니다.
-      </p>
+      <div class="hero-card">
 
-      <div class="buttons">
-        <a href="#location" class="btn btn-main">진료시간 · 오시는 길</a>
-        <a href="#treatment" class="btn btn-sub">진료 안내</a>
+        <div class="hero-card-title">
+          바른준한의원 진료안내
+        </div>
+
+        <div class="quick-row">
+          <div class="quick-label">대표전화</div>
+          <div class="quick-value phone">
+            031-722-2161
+          </div>
+        </div>
+
+        <div class="quick-row">
+          <div class="quick-label">위치</div>
+          <div class="quick-value">
+            수진역 2번 출구
+          </div>
+        </div>
+
+        <div class="quick-row">
+          <div class="quick-label">진료시간</div>
+          <div class="quick-value">
+            평일 09:00 ~ 19:00
+          </div>
+        </div>
+
+        <div class="quick-row">
+          <div class="quick-label">토요일</div>
+          <div class="quick-value">
+            09:00 ~ 14:00
+          </div>
+        </div>
+
+        <div class="quick-row">
+          <div class="quick-label">일요일 · 공휴일</div>
+          <div class="quick-value">
+            휴진
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<section class="intro" id="intro">
+  <!-- 한의원 소개 -->
+  <section id="about">
 
-  <div class="container intro-grid">
+    <div class="container about-grid">
 
-    <div>
+      <div>
 
-      <div class="section-label">ABOUT BARUNJOON</div>
+        <div class="section-label">
+          ABOUT BARUNJOON
+        </div>
 
-      <h2 class="section-title">
-        편안하게 이야기할 수 있는<br>
-        가까운 한의원이 되겠습니다.
-      </h2>
+        <h2 class="section-title">
+          편안하게 이야기할 수 있는<br>
+          가까운 한의원이 되겠습니다.
+        </h2>
 
-      <p class="section-desc">
-        증상이 있는 부위만 보지 않고,
-        환자의 생활습관과 몸 상태를 함께 살펴보며
-        필요한 진료를 차분하게 안내드리겠습니다.
-      </p>
+        <p class="section-description">
+          불편한 부위만을 바라보기보다
+          환자분의 현재 상태와 생활습관을 함께 살펴보고,
+          필요한 진료를 이해하기 쉽게 안내드리겠습니다.
+        </p>
 
-    </div>
-
-    <div class="intro-card">
-
-      <div class="big">
-        “충분히 듣고,<br>
-        꼼꼼히 살피고,<br>
-        이해하기 쉽게 설명하겠습니다.”
       </div>
 
-    </div>
+      <div class="message-card">
 
-  </div>
-
-</section>
-
-
-<section class="treatment" id="treatment">
-
-  <div class="container">
-
-    <div class="section-label">TREATMENT</div>
-
-    <h2 class="section-title">
-      주요 진료 안내
-    </h2>
-
-    <p class="section-desc">
-      환자의 상태에 따라 필요한 진료 방법을 안내합니다.
-    </p>
-
-
-    <div class="cards">
-
-      <div class="card">
-        <div class="number">01</div>
-        <h3>목 · 어깨 통증</h3>
         <p>
-          목과 어깨의 불편감, 근육 긴장 등
-          환자의 현재 상태를 확인하여 진료합니다.
+          “충분히 듣고,<br>
+          꼼꼼히 살피며,<br>
+          정성을 담아 진료하겠습니다.”
         </p>
-      </div>
 
-
-      <div class="card">
-        <div class="number">02</div>
-        <h3>허리 · 관절 통증</h3>
-        <p>
-          허리와 관절의 불편감에 대해
-          상태와 생활습관을 함께 살펴봅니다.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="number">03</div>
-        <h3>교통사고 후 불편감</h3>
-        <p>
-          교통사고 이후 발생한 불편감에 대해
-          현재 증상과 몸 상태를 확인합니다.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="number">04</div>
-        <h3>추나요법</h3>
-        <p>
-          환자의 상태를 확인한 후 필요한 경우
-          추나요법을 시행합니다.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="number">05</div>
-        <h3>침 · 약침 진료</h3>
-        <p>
-          증상과 상태에 따라 침 및 약침 등의
-          한의학적 진료를 시행합니다.
-        </p>
-      </div>
-
-
-      <div class="card">
-        <div class="number">06</div>
-        <h3>한약 · 건강관리</h3>
-        <p>
-          개인의 몸 상태와 생활습관을 고려하여
-          필요한 진료를 상담합니다.
-        </p>
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<section id="doctor">
+  <!-- 주요 진료 -->
+  <section class="treatment" id="treatment">
 
-  <div class="container doctor-grid">
-
-    <div class="doctor-photo">
-      원장님 사진을<br>
-      나중에 이곳에 넣을 예정입니다.
-    </div>
-
-
-    <div class="doctor-text">
+    <div class="container">
 
       <div class="section-label">
-        DOCTOR
+        TREATMENT
       </div>
 
       <h2 class="section-title">
-        바른준한의원 원장
+        주요 진료 안내
       </h2>
 
-      <h3>
-        환자의 이야기를 먼저 듣겠습니다.
-      </h3>
-
-      <p>
-        같은 증상이라도 생활환경과 몸 상태에 따라
-        불편함의 양상은 다를 수 있습니다.
+      <p class="section-description">
+        환자분의 증상과 현재 몸 상태를 확인한 후
+        필요한 한의학적 진료를 안내합니다.
       </p>
 
-      <p>
-        충분한 상담을 바탕으로 현재 상태를 살펴보고,
-        필요한 진료에 대해 이해하기 쉽게 안내드리겠습니다.
-      </p>
 
-    </div>
+      <div class="treatment-grid">
 
-  </div>
+        <article class="treatment-card">
+          <div class="treatment-number">01</div>
+          <h3>목 · 어깨 통증</h3>
+          <p>
+            목과 어깨의 불편감과 근육 긴장 등을 살펴
+            환자의 상태에 맞춰 진료합니다.
+          </p>
+        </article>
 
-</section>
+        <article class="treatment-card">
+          <div class="treatment-number">02</div>
+          <h3>허리 · 관절 통증</h3>
+          <p>
+            허리와 관절의 불편감에 대해
+            현재 상태와 생활습관을 함께 살펴봅니다.
+          </p>
+        </article>
 
+        <article class="treatment-card">
+          <div class="treatment-number">03</div>
+          <h3>교통사고 후 불편감</h3>
+          <p>
+            교통사고 이후 나타난 불편감과 몸 상태를 확인하여
+            필요한 진료를 안내합니다.
+          </p>
+        </article>
 
-<section class="info" id="location">
+        <article class="treatment-card">
+          <div class="treatment-number">04</div>
+          <h3>추나요법</h3>
+          <p>
+            환자의 상태와 필요성을 확인한 후
+            추나요법을 시행합니다.
+          </p>
+        </article>
 
-  <div class="container">
+        <article class="treatment-card">
+          <div class="treatment-number">05</div>
+          <h3>침 · 약침</h3>
+          <p>
+            증상 및 진료 결과에 따라
+            침·약침 등 한의학적 진료를 시행합니다.
+          </p>
+        </article>
 
-    <div class="section-label">VISIT US</div>
-
-    <h2 class="section-title">
-      진료시간 · 오시는 길
-    </h2>
-
-
-    <div class="info-grid">
-
-      <div class="info-box">
-
-        <h3>진료시간</h3>
-
-        <div class="info-row">
-          <span>월 · 화 · 수 · 금</span>
-          <span>진료시간 입력</span>
-        </div>
-
-        <div class="info-row">
-          <span>목요일</span>
-          <span>진료시간 입력</span>
-        </div>
-
-        <div class="info-row">
-          <span>토요일</span>
-          <span>진료시간 입력</span>
-        </div>
-
-        <div class="info-row">
-          <span>점심시간</span>
-          <span>시간 입력</span>
-        </div>
-
-        <div class="info-row">
-          <span>일 · 공휴일</span>
-          <span>휴진 여부 입력</span>
-        </div>
-
-      </div>
-
-
-      <div class="info-box">
-
-        <h3>오시는 길</h3>
-
-        <div class="address">
-          경기도 성남시 수정구<br>
-          바른준한의원 주소를 입력해주세요.<br><br>
-
-          수진역 인근<br><br>
-
-          대표전화<br>
-          <strong>000-0000-0000</strong>
-        </div>
+        <article class="treatment-card">
+          <div class="treatment-number">06</div>
+          <h3>한약 · 건강관리</h3>
+          <p>
+            개인의 몸 상태와 생활습관 등을 고려하여
+            필요한 한약 및 건강관리를 상담합니다.
+          </p>
+        </article>
 
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
+
+  <!-- 원장소개 -->
+  <section id="doctor">
+
+    <div class="container doctor-grid">
+
+      <div class="doctor-visual">
+
+        <div class="doctor-symbol">
+          正
+        </div>
+
+      </div>
+
+      <div class="doctor-copy">
+
+        <div class="section-label">
+          DOCTOR
+        </div>
+
+        <h2 class="section-title">
+          바른준한의원 원장
+        </h2>
+
+        <div class="doctor-name">
+          조형준 <span>원장</span>
+        </div>
+
+        <p>
+          같은 증상이라도 환자마다 몸 상태와 생활환경,
+          불편함의 양상은 다를 수 있습니다.
+        </p>
+
+        <p>
+          충분한 상담을 바탕으로 환자분의 현재 상태를 살펴보고
+          필요한 진료를 이해하기 쉽게 안내드리겠습니다.
+        </p>
+
+        <p>
+          바른준한의원을 찾아주시는 한 분 한 분께
+          정성을 다하는 진료를 하겠습니다.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 예약 -->
+  <section class="reservation">
+
+    <div class="container">
+
+      <div class="reservation-box">
+
+        <div>
+
+          <h2>
+            편안한 진료를 위해 미리 예약해주세요.
+          </h2>
+
+          <p>
+            전화 문의 및 네이버 예약을 이용하실 수 있습니다.
+          </p>
+
+        </div>
+
+        <div class="reservation-buttons">
+
+          <a href="tel:0317222161"
+             class="button button-primary">
+            ☎ 전화 예약
+          </a>
+
+          <a href="https://search.naver.com/search.naver?query=바른준한의원"
+             target="_blank"
+             rel="noopener"
+             class="button naver">
+            N 네이버에서 찾기
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 진료시간 및 위치 -->
+  <section class="visit" id="visit">
+
+    <div class="container">
+
+      <div class="section-label">
+        VISIT BARUNJOON
+      </div>
+
+      <h2 class="section-title">
+        진료시간 · 오시는 길
+      </h2>
+
+      <p class="section-description">
+        수진역 2번 출구에서 가까운 바른준한의원입니다.
+      </p>
+
+
+      <div class="visit-grid">
+
+        <div class="visit-card">
+
+          <h3>진료시간 안내</h3>
+
+          <div class="schedule-row">
+            <span>평일</span>
+            <strong>09:00 ~ 19:00</strong>
+          </div>
+
+          <div class="schedule-row">
+            <span>토요일</span>
+            <strong>09:00 ~ 14:00</strong>
+          </div>
+
+          <div class="schedule-row">
+            <span>점심시간</span>
+            <strong>13:00 ~ 14:00</strong>
+          </div>
+
+          <div class="schedule-row">
+            <span>일요일 · 공휴일</span>
+            <strong>휴진</strong>
+          </div>
+
+          <p class="notice">
+            진료 및 예약 관련 문의는
+            031-722-2161로 전화해주세요.
+          </p>
+
+        </div>
+
+
+        <div class="visit-card">
+
+          <h3>오시는 길</h3>
+
+          <div class="subway">
+            수진역 2번 출구
+          </div>
+
+          <div class="address-big">
+            경기도 성남시 중원구 광명로 119<br>
+            금성빌딩 2층
+          </div>
+
+          <p>
+            대표전화 031-722-2161
+          </p>
+
+          <iframe
+            title="바른준한의원 위치"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps?q=경기도+성남시+중원구+광명로+119&output=embed">
+          </iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
 
 
 <footer>
 
   <div class="container">
 
-    <div class="footer-name">
+    <div class="footer-logo">
       바른준한의원
     </div>
 
-    <p>
-      대표원장 : 원장명 입력
-    </p>
+    <div class="footer-info">
+      대표원장 조형준<br>
+      경기도 성남시 중원구 광명로 119, 깨돌이김밥 2층<br>
+      대표전화 031-722-2161<br><br>
 
-    <p>
-      주소 : 경기도 성남시 수정구 주소 입력
-    </p>
-
-    <p>
-      전화 : 000-0000-0000
-    </p>
-
-    <br>
-
-    <p>
       © 2026 BARUNJOON KOREAN MEDICINE CLINIC.
       All Rights Reserved.
-    </p>
+    </div>
 
   </div>
 
 </footer>
 
 
-<div class="mobile-contact">
+<div class="mobile-bar">
 
-  <a class="mobile-map" href="#location">
+  <a
+    class="mobile-map"
+    href="#visit">
     오시는 길
   </a>
 
-  <a class="mobile-phone" href="tel:00000000000">
-    전화하기
+  <a
+    class="mobile-call"
+    href="tel:0317222161">
+    ☎ 전화하기
   </a>
 
 </div>
