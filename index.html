@@ -281,11 +281,14 @@
 
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 75px;
       align-items: center;
     }
-
+.mobile-reserve {
+  background: #03c75a;
+  color: white;
+}
     .message-card {
       min-height: 360px;
       padding: 52px;
@@ -952,7 +955,7 @@
             ☎ 전화 예약
           </a>
 
-          <a href="https://search.naver.com/search.naver?query=바른준한의원"
+          <a href="https://map.naver.com/p/entry/place/36351446?placePath=%2Fbooking%3Fentry%3Dpll%26from%3Dnx%26fromNxList%3Dtrue&placeSearchOption=entry%3Dpll%26fromNxList%3Dtrue&searchType=place&c=15.00,0,0,0,dh"
              target="_blank"
              rel="noopener"
              class="button naver">
@@ -1053,7 +1056,29 @@
   </section>
 
 </main>
+<div class="mobile-bar">
 
+  <a
+    class="mobile-map"
+    href="#visit">
+    길찾기
+  </a>
+
+  <a
+    class="mobile-reserve"
+    href="https://map.naver.com/p/entry/place/36351446?placePath=%2Fhome%3Fentry%3Dpll%26from%3Dnx%26fromNxList%3Dtrue%26from%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202608121431%26locale%3Dko%26svcName%3Dmap_pcv5&placeSearchOption=entry%3Dpll%26fromNxList%3Dtrue&searchType=place&c=15.00,0,0,0,dh"
+    target="_blank"
+    rel="noopener">
+    N 예약
+  </a>
+
+  <a
+    class="mobile-call"
+    href="tel:0317222161">
+    ☎ 전화
+  </a>
+
+</div>
 
 <footer>
 
@@ -1076,22 +1101,6 @@
 
 </footer>
 
-
-<div class="mobile-bar">
-
-  <a
-    class="mobile-map"
-    href="#visit">
-    오시는 길
-  </a>
-
-  <a
-    class="mobile-call"
-    href="tel:0317222161">
-    ☎ 전화하기
-  </a>
-
-</div>
 
 
 </body>
