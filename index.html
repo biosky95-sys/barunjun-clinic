@@ -898,6 +898,150 @@
 
 }
   </style>
+  /* =====================================
+   PC / MOBILE 완전 분리
+===================================== */
+
+/* 기본값 = PC */
+.desktop-version {
+  display: block;
+}
+
+.mobile-version {
+  display: none;
+}
+
+
+/* ==============================
+   모바일
+============================== */
+
+@media (max-width: 850px) {
+
+  /* PC용 가로 이미지 4장 완전히 숨김 */
+  .desktop-version {
+    display: none !important;
+  }
+
+  /* 모바일용 텍스트 홈페이지 표시 */
+  .mobile-version {
+    display: block !important;
+    background: #f8faf6;
+    padding: 0 20px 110px;
+  }
+
+
+  .mobile-hero {
+    padding: 55px 5px 40px;
+  }
+
+  .mobile-eyebrow {
+    color: #688574;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  .mobile-hero h1 {
+    color: #214a35;
+    font-size: 37px;
+    line-height: 1.3;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+  }
+
+  .mobile-hero h1 strong {
+    color: #4d8265;
+  }
+
+  .mobile-hero p {
+    color: #68756d;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+
+  /* 진료정보 */
+
+  .mobile-info {
+    background: white;
+    border-radius: 22px;
+    padding: 27px 23px;
+    box-shadow: 0 12px 35px rgba(38,72,52,.08);
+    margin-bottom: 18px;
+  }
+
+  .mobile-info-title {
+    color: #28563e;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 18px;
+  }
+
+  .mobile-info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #edf0ed;
+    font-size: 14px;
+  }
+
+  .mobile-info-row:last-child {
+    border-bottom: 0;
+  }
+
+  .mobile-info-row span {
+    color: #7a857e;
+  }
+
+  .mobile-info-row strong {
+    color: #294d39;
+  }
+
+
+  /* 모바일 주요 버튼 */
+
+  .mobile-action-buttons {
+    display: grid;
+    gap: 10px;
+  }
+
+  .mobile-action-buttons a {
+    min-height: 76px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .mobile-main-call {
+    background: #2d6347;
+    color: white;
+    flex-direction: column;
+  }
+
+  .mobile-main-call strong {
+    font-size: 23px;
+    margin-top: 1px;
+  }
+
+  .mobile-main-naver {
+    background: #03c75a;
+    color: white;
+  }
+
+  .mobile-main-map {
+    background: white;
+    color: #28543d;
+    border: 1px solid #dbe3dc;
+  }
+
+}
 </head>
 
 <body>
@@ -927,7 +1071,7 @@
   </div>
 </header>
 
-<main class="clinic-showcase">
+<main class="clinic-showcase desktop-version">
 
   <!-- 01 메인 소개 -->
   <section class="visual-section visual-first" id="home">
@@ -1070,6 +1214,91 @@
   </section>
 
 </main>
+  <section class="mobile-version">
+
+  <div class="mobile-hero">
+
+    <div class="mobile-eyebrow">
+      BARUNJOON KOREAN MEDICINE CLINIC
+    </div>
+
+    <h1>
+      몸을 세심하게 살피는<br>
+      <strong>바른 진료</strong>를 생각합니다.
+    </h1>
+
+    <p>
+      바른준한의원은 환자 한 분 한 분의 이야기를 충분히 듣고
+      현재의 몸 상태를 세심하게 살펴
+      편안하고 정성스러운 진료를 지향합니다.
+    </p>
+
+  </div>
+
+
+  <div class="mobile-info">
+
+    <div class="mobile-info-title">
+      바른준한의원 진료안내
+    </div>
+
+    <div class="mobile-info-row">
+      <span>대표전화</span>
+      <strong>031-722-2161</strong>
+    </div>
+
+    <div class="mobile-info-row">
+      <span>위치</span>
+      <strong>수진역 2번 출구</strong>
+    </div>
+
+    <div class="mobile-info-row">
+      <span>평일</span>
+      <strong>09:00 ~ 19:00</strong>
+    </div>
+
+    <div class="mobile-info-row">
+      <span>토요일</span>
+      <strong>09:00 ~ 14:00</strong>
+    </div>
+
+    <div class="mobile-info-row">
+      <span>점심시간</span>
+      <strong>13:00 ~ 14:00</strong>
+    </div>
+
+    <div class="mobile-info-row">
+      <span>일요일 · 공휴일</span>
+      <strong>휴진</strong>
+    </div>
+
+  </div>
+
+
+  <div class="mobile-action-buttons">
+
+    <a href="tel:0317222161" class="mobile-main-call">
+      전화상담
+      <strong>031-722-2161</strong>
+    </a>
+
+    <a href="https://map.naver.com/p/entry/place/36351446?placePath=%2Fhome%3Fentry%3Dpll%26from%3Dnx%26fromNxList%3Dtrue%26from%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202608121547%26locale%3Dko%26svcName%3Dmap_pcv5&placeSearchOption=entry%3Dpll%26fromNxList%3Dtrue&searchType=place&c=15.00,0,0,0,dh"
+       target="_blank"
+       rel="noopener"
+       class="mobile-main-naver">
+      N 네이버 예약
+    </a>
+
+    <a href="https://naver.me/GeUXqdb0"
+       target="_blank"
+       rel="noopener"
+       class="mobile-main-map">
+      수진역 2번 출구 · 길찾기
+    </a>
+
+  </div>
+
+</section>
 <div class="mobile-bar">
 
   <a
