@@ -4,4 +4,4 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
-Sitemap: https://biosky95-sys.github.io/barunjun-clinic/sitemap.xml
+Sitemap: https://barunjoon.com/sitemap.xml
