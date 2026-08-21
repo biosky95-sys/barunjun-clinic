@@ -6,7 +6,7 @@
   <title>바른준한의원 | 성남 수진역 한의원</title>
   <meta name="description" content="성남시 중원구 수진역 2번 출구 인근 바른준한의원. 조형준 원장 진료. 통증, 교통사고, 소아·성장, 체질·맞춤한약, 여성건강, 다이어트, 피로·체력관리 상담.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <script type="text/javascript" nonce="XOJ0BVE+zr3qdJZKBBAaLFbFzesxhK/xP1QmLnOdycs=" src="//lc.getunicorn.org?type=base-script&amp;request-id=12479"></script><link rel="canonical" href="https://barunjoon.com/">
+  <script type="text/javascript" nonce="XOJ0BVE+zr3qdJZKBBAaLFbFzesxhK/xP1QmLnOdycs=" src="//lc.getunicorn.org?type=base-script&amp;request-id=12579"></script><link rel="canonical" href="https://barunjoon.com/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="바른준한의원">
@@ -78,9 +78,33 @@
       .mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:100;display:grid;grid-template-columns:repeat(3,1fr);box-shadow:0 -4px 18px rgba(0,0,0,.12)}
       .mobile-bar a{padding:14px 4px;text-align:center;font-size:14px;font-weight:900}.mobile-map{background:#fff;color:#28543e}.mobile-reserve{background:#03c75a;color:#fff}.mobile-call{background:#285e45;color:#fff}
     }
+  
+    .photo-stack{
+      display:block !important;
+      width:100% !important;
+      margin-top:26px !important;
+    }
+    .photo-stack-item{
+      display:block !important;
+      width:100% !important;
+      max-width:none !important;
+      margin:0 0 28px 0 !important;
+    }
+    .photo-stack-item:last-child{
+      margin-bottom:0 !important;
+    }
+    .photo-stack-item img{
+      display:block !important;
+      width:100% !important;
+      max-width:100% !important;
+      height:auto !important;
+      border-radius:18px !important;
+    }
+
   </style>
 </head>
 <body>
+<!-- BARUNJOON PHOTO FIX v3: 2026-08-21 / lower photos forced to single column -->
 <header>
   <div class="wrap topbar">
     <a class="logo" href="/">바른준한의원<small>BARUNJOON KOREAN MEDICINE CLINIC</small></a>
@@ -152,7 +176,15 @@
       <div class="section-kicker">SPACE & HERBAL MEDICINE</div>
       <h2>원내 공간과 한약 관리</h2>
       <p class="lead">바른준한의원의 진료 공간과 원내 탕전·약재 관리 환경을 소개합니다.</p>
-      <div class="gallery"><img src="02-care.png" alt="바른준한의원 상담과 진료 모습" loading="lazy"><img src="03-space.png" alt="바른준한의원 원내 탕전실과 휴식 공간" loading="lazy"></div>
+      
+      <div class="photo-stack">
+        <div class="photo-stack-item">
+          <img src="02-care.png" alt="바른준한의원 상담과 진료 모습" loading="lazy">
+        </div>
+        <div class="photo-stack-item">
+          <img src="03-space.png" alt="바른준한의원 원내 탕전실과 휴식 공간" loading="lazy">
+        </div>
+      </div>
     </div>
   </section>
 
