@@ -391,6 +391,28 @@ footer{
 }
 </style>
 
+
+<style>
+.detail-illustration{
+  margin:28px auto 0;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid #e2e9e4;
+  background:#fbfaf6;
+  box-shadow:0 12px 32px rgba(38,82,54,.07);
+}
+.detail-illustration img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+@media(max-width:780px){
+  .detail-illustration{margin-top:22px;border-radius:17px}
+  .detail-illustration img{aspect-ratio:4/3}
+}
+</style>
+
 </head>
 <body>
 
@@ -417,6 +439,7 @@ footer{
     <div class="section-label">CLINIC</div>
     <h1>약침 클리닉</h1>
     <p>약침은 한약재에서 조제한 약침액을 경혈이나 치료가 필요한 부위에 적용하는 한방치료의 한 방법입니다. 모든 통증 환자에게 필요한 치료는 아니며 현재 증상과 상태를 확인한 뒤 적용 여부를 결정합니다.</p>
+    <div class="detail-illustration"><img src="clinic-pharmacopuncture.webp" alt="약침 클리닉 일러스트" loading="eager" decoding="async"></div>
     <div class="detail-nav">
       <a href="#symptom">이런 불편이 있다면</a>
       <a href="#check">진료에서 확인하는 것</a>

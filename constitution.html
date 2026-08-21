@@ -391,6 +391,28 @@ footer{
 }
 </style>
 
+
+<style>
+.detail-illustration{
+  margin:28px auto 0;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid #e2e9e4;
+  background:#fbfaf6;
+  box-shadow:0 12px 32px rgba(38,82,54,.07);
+}
+.detail-illustration img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+@media(max-width:780px){
+  .detail-illustration{margin-top:22px;border-radius:17px}
+  .detail-illustration img{aspect-ratio:4/3}
+}
+</style>
+
 </head>
 <body>
 
@@ -417,6 +439,7 @@ footer{
     <div class="section-label">CLINIC</div>
     <h1>체질 클리닉</h1>
     <p>체질 상담은 하나의 특징만으로 단정하기보다 평소 소화, 수면, 땀, 추위·더위에 대한 반응, 피로, 배변과 생활습관을 폭넓게 확인하는 과정으로 진행합니다.</p>
+    <div class="detail-illustration"><img src="clinic-constitution.webp" alt="체질 클리닉 상담 일러스트" loading="eager" decoding="async"></div>
     <div class="detail-nav">
       <a href="#symptom">이런 불편이 있다면</a>
       <a href="#check">진료에서 확인하는 것</a>

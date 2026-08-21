@@ -391,6 +391,28 @@ footer{
 }
 </style>
 
+
+<style>
+.detail-illustration{
+  margin:28px auto 0;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid #e2e9e4;
+  background:#fbfaf6;
+  box-shadow:0 12px 32px rgba(38,82,54,.07);
+}
+.detail-illustration img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+@media(max-width:780px){
+  .detail-illustration{margin-top:22px;border-radius:17px}
+  .detail-illustration img{aspect-ratio:4/3}
+}
+</style>
+
 </head>
 <body>
 
@@ -417,6 +439,7 @@ footer{
     <div class="section-label">CLINIC</div>
     <h1>자동차사고 후유증</h1>
     <p>교통사고 후에는 사고 직후보다 몇 시간 또는 하루 이상 지난 뒤 목·허리 통증이나 전신의 뻐근함이 나타나는 경우가 있습니다. 사고 당시 상황과 이후 증상의 변화를 함께 살펴봅니다.</p>
+    <div class="detail-illustration"><img src="clinic-traffic.webp" alt="자동차사고 후유증 상담 일러스트" loading="eager" decoding="async"></div>
     <div class="detail-nav">
       <a href="#symptom">이런 불편이 있다면</a>
       <a href="#check">진료에서 확인하는 것</a>

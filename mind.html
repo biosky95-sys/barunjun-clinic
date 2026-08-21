@@ -391,6 +391,28 @@ footer{
 }
 </style>
 
+
+<style>
+.detail-illustration{
+  margin:28px auto 0;
+  overflow:hidden;
+  border-radius:22px;
+  border:1px solid #e2e9e4;
+  background:#fbfaf6;
+  box-shadow:0 12px 32px rgba(38,82,54,.07);
+}
+.detail-illustration img{
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+}
+@media(max-width:780px){
+  .detail-illustration{margin-top:22px;border-radius:17px}
+  .detail-illustration img{aspect-ratio:4/3}
+}
+</style>
+
 </head>
 <body>
 
@@ -417,6 +439,7 @@ footer{
     <div class="section-label">CLINIC</div>
     <h1>심신 클리닉</h1>
     <p>스트레스와 수면 부족이 오래 이어지면 두통, 목·어깨 긴장, 소화불편, 피로감처럼 여러 신체 증상이 함께 나타날 수 있습니다. 현재 가장 불편한 증상과 수면·식사·업무환경을 함께 확인합니다.</p>
+    <div class="detail-illustration"><img src="clinic-mind.webp" alt="심신 클리닉 상담 일러스트" loading="eager" decoding="async"></div>
     <div class="detail-nav">
       <a href="#symptom">이런 불편이 있다면</a>
       <a href="#check">진료에서 확인하는 것</a>
