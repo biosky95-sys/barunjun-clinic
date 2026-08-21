@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://barunjoon.com/</loc>
-    <lastmod>2026-08-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://barunjoon.com/</loc></url>
+  <url><loc>https://barunjoon.com/pain.html</loc></url>
+  <url><loc>https://barunjoon.com/traffic.html</loc></url>
+  <url><loc>https://barunjoon.com/children.html</loc></url>
+  <url><loc>https://barunjoon.com/herbal.html</loc></url>
+  <url><loc>https://barunjoon.com/diet.html</loc></url>
+  <url><loc>https://barunjoon.com/women.html</loc></url>
 </urlset>
