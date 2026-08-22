@@ -1,0 +1,9 @@
+업로드할 파일
+- index.html
+- sitemap.xml
+- columns.html
+- column-*.html 10개
+- barunjoon-search-thumb.jpg
+
+GitHub 저장소 최상위(index.html이 있는 위치)에 전부 업로드하면 됩니다.
+기존 클리닉 11개 페이지는 수정하지 않습니다.
